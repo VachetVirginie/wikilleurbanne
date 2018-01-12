@@ -4617,10 +4617,10 @@ function getAllParameters_carto($wiki, array &$param)
     /*
      * color : couleur des marqueurs
      */
-    // $colors = array(
-    //     'red', 'darkred', 'lightred', 'orange', 'beige', 'green', 'darkgreen', 'lightgreen', 'blue', 'darkblue',
-    //     'lightblue', 'purple', 'darkpurple', 'pink', 'cadetblue', 'white', 'gray', 'lightgray', 'black',
-    // );
+    $colors = array(
+        'red', 'darkred', 'lightred', 'orange', 'beige', 'green', 'darkgreen', 'lightgreen', 'blue', 'darkblue',
+        'lightblue', 'purple', 'darkpurple', 'pink', 'cadetblue', 'white', 'gray', 'lightgray', 'black',
+    );
     $param['color'] = isset($_GET['color']) ? $_GET['color'] : $wiki->GetParameter('color');
     if (!empty($param['color'])) {
         $colorsparam = explode(',', $param['color']);
